@@ -15,10 +15,16 @@
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:site" content="@lovable_dev" />
     <meta name="twitter:image" content="https://lovable.dev/opengraph-image-p98pqg.png" />
+
+    <!-- Add base tag for correct relative paths -->
+    <base href="/port/" />
   </head>
 
   <body>
     <div id="root"></div>
-<!--     <script type="module" src="/src/main.tsx"></script> -->
+
+    <!-- No direct source script here in production build -->
+    <!-- The build process will inject correct JS and CSS files -->
   </body>
 </html>
+
